@@ -1,10 +1,9 @@
-// App.tsx
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
-import {TimerDisplay} from './components/TimerDisplay';
-import {Button} from './components/Button';
-import {LapTable} from './components/LapTable';
-import {Summary} from './components/Summary';
+import { TimerDisplay } from './components/TimerDisplay';
+import { Button } from './components/Button';
+import { LapTable } from './components/LapTable';
+import { Summary } from './components/Summary';
 
 const AppContainer = styled.div`
   display: flex;
@@ -20,14 +19,20 @@ const App: React.FC = () => {
   const [isRunning, setIsRunning] = useState<boolean>(false);
 
   useEffect(() => {
-    let timer: NodeJS.Timeout;
+    let timer: NodeJS.Timeout | null = null;
+
     if (isRunning) {
       timer = setInterval(() => {
         setTotalTime((prev) => prev + 100);
         setLapTime((prev) => prev + 100);
       }, 100);
     }
-    return () => clearInterval(timer);
+
+    return () => {
+      if (timer) {
+        clearInterval(timer);
+      }
+    };
   }, [isRunning]);
 
   const startHandler = () => setIsRunning(true);
@@ -38,7 +43,7 @@ const App: React.FC = () => {
     setLaps([]);
   };
   const lapHandler = () => {
-    setLaps([...laps, lapTime]);
+    setLaps((prevLaps) => [...prevLaps, lapTime]);
     setLapTime(0);
   };
 
@@ -46,13 +51,16 @@ const App: React.FC = () => {
     <AppContainer>
       {isRunning && <TimerDisplay time={totalTime} />}
       {isRunning && <TimerDisplay time={lapTime} />}
+      
       <div>
         <Button text="Start" onClick={startHandler} variant="main" />
         <Button text="Stop" onClick={stopHandler} variant="danger" />
         <Button text="Reset" onClick={resetHandler} variant="secondary" />
         <Button text="Lap" onClick={lapHandler} variant="secondary" />
       </div>
+      
       {isRunning && <LapTable laps={laps} />}
+      
       {!isRunning && laps.length > 0 && <Summary totalTime={totalTime} laps={laps} />}
     </AppContainer>
   );
