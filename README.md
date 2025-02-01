@@ -1,47 +1,173 @@
-# Getting Started with Create React App
+# Stopwatch with Lap Table
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![App Screenshot](path_to_screenshot.png)
 
-## Available Scripts
+## Project Description
 
-In the project directory, you can run:
+The project is a stopwatch application that allows tracking lap times. It contains two timers: one for the total time and another for the current lap time. Additionally, it includes a lap table that displays the time for each lap. The user can start, stop, reset the stopwatch, and add new laps.
 
-### `npm start`
+### Main Features:
+- **Start**: Starts the countdown for both timers.
+- **Stop**: Stops the countdown and displays a summary.
+- **Reset**: Resets the timers to zero and clears the lap table.
+- **Lap**: Adds a new lap and displays its time in the results table.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Architecture
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+The application consists of several components, including:
+- Generic counter component
+- Total time counter component
+- Lap time counter component
+- Button components in various variants (e.g., main Start, Stop button, etc.)
+- Lap table
+- Single lap entry in the table
+- Summary component
 
-### `npm test`
+Communication within the app is local, with no need to connect to a backend.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Tech Stack
 
-### `npm run build`
+| Technologies       | Description                                         |
+|--------------------|-----------------------------------------------------|
+| React              | Main JavaScript library for building the user interface |
+| TypeScript         | Static typing for JavaScript                        |
+| Styled Components  | Styling components in the application               |
+| React Scripts      | Tools for creating React applications               |
+| Jest               | Application testing                                 |
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Local Development
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To run the application locally, follow these steps:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Ensure you have Node.js v20.* installed.
+2. Clone the repository:
 
-### `npm run eject`
+# Application Scripts
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+| Script         | Description                                                        |
+|----------------|--------------------------------------------------------------------|
+| `dev`          | Runs the application locally                                       |
+| `build`        | Builds the application for production                              |
+| `lint`         | Checks the code for errors and inconsistencies (eslint)            |
+| `lint-fix`     | Automatically fixes detected issues (eslint)                       |
+| `preview`      | Runs the application after building                                |
+| `prettier`     | Formats the code according to Prettier settings                     |
+| `prepare`      | Prepares scripts for Husky (git hooks)                             |
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Live Link
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+The application is available online at this link.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Access
 
-## Learn More
+If the application requires login, use the following test credentials:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **Login**: user@gmail.com
+- **Password**: SomeStrongPassword123!@
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-# Projekt-2-StopWatch
+## Completed Features
+
+- Implementation of two timers: total time and lap time.
+- Implementation of Start, Stop, Reset, Lap buttons.
+- Lap table displaying lap numbers and times.
+- Components for the timer, buttons, table, and summary.
+- The application works according to React StrictMode guidelines.
+
+## Future Plans
+
+- Adding an option to export lap results to a file (e.g., CSV).
+- The ability to save lap records in local storage or a database.
+- UI optimization for mobile devices.
+
+## Contact the Author
+
+- [LinkedIn](https://www.linkedin.com)
+- **Email**: example@example.com
+
+
+
+# Stoper z tabelą okrążeń
+
+![App Screenshot](ścieżka_do_zrzutu_ekranu.png)
+
+## Opis projektu
+
+Projekt jest aplikacją typu stoper, która umożliwia śledzenie czasu okrążeń. Zawiera dwa liczniki: jeden dla całkowitego czasu, a drugi dla czasu aktualnego okrążenia. Dodatkowo zawiera tabelę okrążeń, która wyświetla czas każdego okrążenia. Użytkownik może rozpocząć, zatrzymać, zresetować stoper oraz dodać nowe okrążenia.
+
+### Główne funkcje:
+- Start: Rozpoczyna odliczanie czasu w obu licznikach.
+- Stop: Zatrzymuje odliczanie i wyświetla podsumowanie.
+- Reset: Resetuje liczniki do zera i kasuje tabelę okrążeń.
+- Lap: Dodaje nowe okrążenie i wyświetla jego czas w tabeli wyników.
+
+## Architektura
+
+Aplikacja składa się z kilku komponentów, w tym:
+- Generyczny komponent licznika
+- Komponent licznika całkowitego czasu
+- Komponent licznika czasu okrążenia
+- Komponent przycisków w różnych wariantach (np. główny przycisk Start, Stop, itp.)
+- Tabela okrążeń
+- Pojedynczy wpis w tabeli okrążeń
+- Komponent podsumowania
+
+Komunikacja w aplikacji jest lokalna, bez potrzeby łączenia z backendem.
+
+## Tech stack
+
+| Technologie       | Opis                              |
+|-------------------|-----------------------------------|
+| React             | Główna biblioteka JavaScript do budowy interfejsu użytkownika |
+| TypeScript        | Statyczne typowanie dla JavaScript |
+| Styled Components | Stylowanie komponentów w aplikacji |
+| React Scripts     | Narzędzia do tworzenia aplikacji w React |
+| Jest              | Testowanie aplikacji              |
+
+## Local development
+
+Aby uruchomić aplikację lokalnie, postępuj zgodnie z poniższymi krokami:
+
+1. Upewnij się, że masz zainstalowaną wersję Node.js v20.*
+2. Sklonuj repozytorium:
+# Skrypty w aplikacji
+
+| Skrypt        | Opis                                                           |
+|---------------|----------------------------------------------------------------|
+| `dev`         | Uruchamia aplikację lokalnie                                   |
+| `build`       | Buduje aplikację do produkcji                                  |
+| `lint`        | Sprawdza kod pod kątem błędów i niespójności (eslint)            |
+| `lint-fix`    | Naprawia automatycznie wykryte problemy (eslint)                |
+| `preview`     | Uruchamia aplikację po jej zbudowaniu                          |
+| `prettier`    | Formatuje kod zgodnie z ustawieniami Prettiera                  |
+| `prepare`     | Przygotowuje skrypty do działania Husky (git hooks)             |
+
+## Link do live
+
+Aplikacja jest dostępna online pod tym linkiem.
+
+## Dostępy
+
+Jeśli aplikacja wymaga logowania, użyj poniższych danych logowania testowego:
+
+- **Login**: user@gmail.com
+- **Hasło**: SomeStrongPassword123!@
+
+## Co zostało zrobione?
+
+- Implementacja dwóch liczników: całkowitego czasu oraz czasu okrążenia.
+- Implementacja przycisków Start, Stop, Reset, Lap.
+- Tabela okrążeń wyświetlająca numery okrążeń i czasy.
+- Komponenty do licznika, przycisków, tabeli i podsumowania.
+- Aplikacja działa zgodnie z zasadami React StrictMode.
+
+## Plany na przyszłość
+
+- Dodanie opcji eksportowania wyników okrążeń do pliku (np. CSV).
+- Możliwość zapisywania rekordów okrążeń w lokalnym magazynie lub bazie danych.
+- Optymalizacja interfejsu użytkownika dla urządzeń mobilnych.
+
+## Kontakt do autora
+
+- [LinkedIn](https://www.linkedin.com)
+- **Email**: example@example.com
+
