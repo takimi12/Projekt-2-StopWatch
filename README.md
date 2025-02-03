@@ -1,39 +1,34 @@
 # Stopwatch with Lap Table
 
-![App Screenshot](path_to_screenshot.png)
-
 ## Project Description
 
-The project is a stopwatch application that allows tracking lap times. It contains two timers: one for the total time and another for the current lap time. Additionally, it includes a lap table that displays the time for each lap. The user can start, stop, reset the stopwatch, and add new laps.
+The project is a stopwatch application that allows tracking lap times. It includes two timers: one for the total time and another for the current lap time. Additionally, it features a lap table displaying the time for each lap. Users can start, stop, reset the stopwatch, and add new laps. This is the 2nd out of 5 projects created as part of the React course by Frontowcy.
 
 ### Main Features:
-- **Start**: Starts the countdown for both timers.
-- **Stop**: Stops the countdown and displays a summary.
-- **Reset**: Resets the timers to zero and clears the lap table.
-- **Lap**: Adds a new lap and displays its time in the results table.
+- **Start:** Begins counting time on both timers.
+- **Stop:** Stops counting and displays a summary.
+- **Reset:** Resets the timers to zero and clears the lap table.
+- **Lap:** Adds a new lap and displays its time in the results table.
 
 ## Architecture
 
 The application consists of several components, including:
-- Generic counter component
+- A generic timer component
 - Total time counter component
 - Lap time counter component
-- Button components in various variants (e.g., main Start, Stop button, etc.)
+- Button component with different variants (e.g., main Start, Stop button, etc.)
 - Lap table
-- Single lap entry in the table
+- Single entry in the lap table
 - Summary component
-
-Communication within the app is local, with no need to connect to a backend.
 
 ## Tech Stack
 
-| Technologies       | Description                                         |
-|--------------------|-----------------------------------------------------|
-| React              | Main JavaScript library for building the user interface |
-| TypeScript         | Static typing for JavaScript                        |
-| Styled Components  | Styling components in the application               |
-| React Scripts      | Tools for creating React applications               |
-| Jest               | Application testing                                 |
+| Technology        | Description                                  |
+|-------------------|----------------------------------------------|
+| React            | Main JavaScript library for building the UI  |
+| TypeScript       | Static typing for JavaScript                 |
+| Styled Components | Styling components in the application       |
+| React Scripts    | Tools for creating React applications       |
 
 ## Local Development
 
@@ -42,57 +37,58 @@ To run the application locally, follow these steps:
 1. Ensure you have Node.js v20.* installed.
 2. Clone the repository:
 
-# Application Scripts
+### Install dependencies
 
-| Script         | Description                                                        |
-|----------------|--------------------------------------------------------------------|
-| `dev`          | Runs the application locally                                       |
-| `build`        | Builds the application for production                              |
-| `lint`         | Checks the code for errors and inconsistencies (eslint)            |
-| `lint-fix`     | Automatically fixes detected issues (eslint)                       |
-| `preview`      | Runs the application after building                                |
-| `prettier`     | Formats the code according to Prettier settings                     |
-| `prepare`      | Prepares scripts for Husky (git hooks)                             |
+In the terminal, run:
 
-## Live Link
+npm install
 
-The application is available online at this link.
+# Start development server
 
-## Access
+Next, in the terminal, run:
 
-If the application requires login, use the following test credentials:
+npm run start
 
-- **Login**: user@gmail.com
-- **Password**: SomeStrongPassword123!@
 
-## Completed Features
+# Scripts in the application
+
+| Script       | Description                                                    |
+|-------------|----------------------------------------------------------------|
+| `dev`       | Starts the application locally                                |
+| `build`     | Builds the application for production                         |
+| `lint`      | Checks the code for errors and inconsistencies (eslint)       |
+| `lint-fix`  | Automatically fixes detected issues (eslint)                  |
+| `preview`   | Runs the application after building                           |
+| `prettier`  | Formats the code according to Prettier settings               |
+| `prepare`   | Prepares scripts for Husky (git hooks)                        |
+
+## What has been done?
 
 - Implementation of two timers: total time and lap time.
-- Implementation of Start, Stop, Reset, Lap buttons.
+- Implementation of Start, Stop, Reset, and Lap buttons.
 - Lap table displaying lap numbers and times.
 - Components for the timer, buttons, table, and summary.
-- The application works according to React StrictMode guidelines.
+- The application operates according to React StrictMode rules.
 
-## Future Plans
+## Future plans
 
 - Adding an option to export lap results to a file (e.g., CSV).
-- The ability to save lap records in local storage or a database.
-- UI optimization for mobile devices.
+- Ability to save lap records in local storage or a database.
+- Optimizing the user interface for mobile devices.
 
-## Contact the Author
+# Contact
 
-- [LinkedIn](https://www.linkedin.com)
-- **Email**: example@example.com
-
+Email: tomek12olech@gmail.com  
+GitHub: [takimi12](https://github.com/takimi12)  
+LinkedIn:
 
 
 # Stoper z tabelą okrążeń
 
-![App Screenshot](ścieżka_do_zrzutu_ekranu.png)
 
 ## Opis projektu
 
-Projekt jest aplikacją typu stoper, która umożliwia śledzenie czasu okrążeń. Zawiera dwa liczniki: jeden dla całkowitego czasu, a drugi dla czasu aktualnego okrążenia. Dodatkowo zawiera tabelę okrążeń, która wyświetla czas każdego okrążenia. Użytkownik może rozpocząć, zatrzymać, zresetować stoper oraz dodać nowe okrążenia.
+Projekt jest aplikacją typu stoper, która umożliwia śledzenie czasu okrążeń. Zawiera dwa liczniki: jeden dla całkowitego czasu, a drugi dla czasu aktualnego okrążenia. Dodatkowo zawiera tabelę okrążeń, która wyświetla czas każdego okrążenia. Użytkownik może rozpocząć, zatrzymać, zresetować stoper oraz dodać nowe okrążenia. 2 z 5 projektów przygotowany w ramach kursu React od Frontowcy
 
 ### Główne funkcje:
 - Start: Rozpoczyna odliczanie czasu w obu licznikach.
@@ -111,7 +107,6 @@ Aplikacja składa się z kilku komponentów, w tym:
 - Pojedynczy wpis w tabeli okrążeń
 - Komponent podsumowania
 
-Komunikacja w aplikacji jest lokalna, bez potrzeby łączenia z backendem.
 
 ## Tech stack
 
@@ -121,7 +116,7 @@ Komunikacja w aplikacji jest lokalna, bez potrzeby łączenia z backendem.
 | TypeScript        | Statyczne typowanie dla JavaScript |
 | Styled Components | Stylowanie komponentów w aplikacji |
 | React Scripts     | Narzędzia do tworzenia aplikacji w React |
-| Jest              | Testowanie aplikacji              |
+
 
 ## Local development
 
@@ -129,6 +124,18 @@ Aby uruchomić aplikację lokalnie, postępuj zgodnie z poniższymi krokami:
 
 1. Upewnij się, że masz zainstalowaną wersję Node.js v20.*
 2. Sklonuj repozytorium:
+
+# Install dependencies
+
+W terminalu nalezy wpisać
+
+npm install
+
+# Start development server
+Następnie w terminalu 
+
+npm run start
+
 # Skrypty w aplikacji
 
 | Skrypt        | Opis                                                           |
@@ -141,16 +148,6 @@ Aby uruchomić aplikację lokalnie, postępuj zgodnie z poniższymi krokami:
 | `prettier`    | Formatuje kod zgodnie z ustawieniami Prettiera                  |
 | `prepare`     | Przygotowuje skrypty do działania Husky (git hooks)             |
 
-## Link do live
-
-Aplikacja jest dostępna online pod tym linkiem.
-
-## Dostępy
-
-Jeśli aplikacja wymaga logowania, użyj poniższych danych logowania testowego:
-
-- **Login**: user@gmail.com
-- **Hasło**: SomeStrongPassword123!@
 
 ## Co zostało zrobione?
 
@@ -166,8 +163,8 @@ Jeśli aplikacja wymaga logowania, użyj poniższych danych logowania testowego:
 - Możliwość zapisywania rekordów okrążeń w lokalnym magazynie lub bazie danych.
 - Optymalizacja interfejsu użytkownika dla urządzeń mobilnych.
 
-## Kontakt do autora
+# Kontakt
 
-- [LinkedIn](https://www.linkedin.com)
-- **Email**: example@example.com
-
+Email: tomek12olech@gmail.com
+GitHub: [takimi12](https://github.com/takimi12)
+LinkedIn:
